@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Load Stylesheet Before Scripts -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <header><h2>Image Classifier using TensorFlow.js</h2></header>
+    <main>
+      <div id="console"></div>
+      <!-- Add an image that we will use to test -->
+      <button type="button" id="prevImage" name="prevImg" onclick="app();">Previous Image</button>
+      <img id="img"  name="imgCycle" width="400" height="400"/>
+      
+    
+      <button type="button" id="nextImage" name="nextImg" onclick="app();">Next Image</button>
+      <!-- Load index.js after the content of the page -->
+      <script src="js/index.js"></script>
+    </main>
+  </body>
+</html>
