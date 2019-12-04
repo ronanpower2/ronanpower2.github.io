@@ -1,5 +1,5 @@
 var i = 0;
-const imageArr = ['img/pug.jpg', 'img/coco.jpg', 'img/maine-coon.jpg', 'img/golden-retriever.jpeg'];
+const imageArr = ['img/pug.jpg', 'img/coco.jpg', 'img/maine-coon.jpg', 'img/lorikeet.jpg', 'img/guitar.jpg'];
 let net;
 
 const prevImg = document.getElementById('prevImage');
@@ -60,8 +60,8 @@ async function app() {
 
   document.getElementById('console').innerText = `
   Prediction: ${result[0].className}\n
-  Probability: ${result[0].probability}
-`;
+  Probability: ${result[0].probability} 
+  `;
 
 }
 
