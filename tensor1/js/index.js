@@ -60,7 +60,7 @@ async function app() {
 
   document.getElementById('console').innerText = `
   Prediction: ${result[0].className}\n
-  Probability: ${result[0].probability} 
+  Probability: ${Math.floor(result[0].probability * 100)}% 
   `;
 
 }
